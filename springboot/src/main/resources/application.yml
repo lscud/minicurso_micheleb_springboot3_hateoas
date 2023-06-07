@@ -5,6 +5,8 @@ spring:
     password: root
   jpa:
     hibernate:
+      # Mpeamento feito seja criado em tabelas no banco de dados. Toda vez que iniciar a app se a tabela nao existir na base de dados ela sera criada
       ddl-auto: update
     properties:
+      # para que não sejam criados logs do hibernate.
       hibernate.jdbc.lob.non_contextual_creation: true
